@@ -7,4 +7,8 @@
     <bean id="myCoach" class="com.surya.springdemo.TrackCoach">
         <constructor-arg ref="myFortune"/>
     </bean>
+
+    <bean id="myCricketCoach" class="com.surya.springdemo.CricketCoach">
+        <property name="fortuneService" ref="myFortune"/>
+    </bean>
 </beans>
